@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFStylePractice.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--<Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="LightBlue" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="TextColor" Value="LightPink" />
+            </Style>-->
+            <Style TargetType="Label">
+                <Setter Property="BackgroundColor" Value="LightBlue" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="TextColor" Value="LightPink" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <!--<Label
+            BackgroundColor="LightBlue"
+            FontSize="Large"
+            HorizontalOptions="CenterAndExpand"
+            Text="Label1"
+            TextColor="LightPink"
+            VerticalOptions="CenterAndExpand" />
+
+        <Label Style="{StaticResource labelStyle}" Text="Label2" />
+        <Label Style="{StaticResource labelStyle}" Text="Label3" />
+        <Label Style="{StaticResource labelStyle}" Text="Label4" />
+        <Label Style="{StaticResource labelStyle}" Text="Label5" />-->
+
+        <Label Text="Label1" />
+        <Label Text="Label2" />
+        <Label Text="Label3" />
+        <Label Text="Label4" />
+        <Label Text="Label5" />
+    </StackLayout>
+
+</ContentPage>
