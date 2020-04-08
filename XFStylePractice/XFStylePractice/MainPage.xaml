@@ -9,13 +9,13 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <!--<Style x:Key="labelStyle" TargetType="Label">
+            <Style x:Key="labelStyle" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="LightBlue" />
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
                 <Setter Property="TextColor" Value="LightPink" />
-            </Style>-->
+            </Style>
             <Style TargetType="Label">
                 <Setter Property="BackgroundColor" Value="LightBlue" />
                 <Setter Property="FontSize" Value="Large" />
@@ -27,20 +27,31 @@
     </ContentPage.Resources>
 
     <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Label">
+                    <Setter Property="BackgroundColor" Value="Yellow" />
+                    <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                    <Setter Property="TextColor" Value="Red" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
         <!--<Label
             BackgroundColor="LightBlue"
             FontSize="Large"
             HorizontalOptions="CenterAndExpand"
             Text="Label1"
             TextColor="LightPink"
-            VerticalOptions="CenterAndExpand" />
+            VerticalOptions="CenterAndExpand" />-->
 
-        <Label Style="{StaticResource labelStyle}" Text="Label2" />
+        <!--<Label Style="{StaticResource labelStyle}" Text="Label2" />
         <Label Style="{StaticResource labelStyle}" Text="Label3" />
         <Label Style="{StaticResource labelStyle}" Text="Label4" />
-        <Label Style="{StaticResource labelStyle}" Text="Label5" />-->
+        <Label Style="{StaticResource labelStyle}" Text="Label5" />
 
-        <Label Text="Label1" />
+        <Label Style="{StaticResource labelStyle}" Text="Label1" />-->
+        <Label Text="Label1234abcdd" BackgroundColor="blue"/>
         <Label Text="Label2" />
         <Label Text="Label3" />
         <Label Text="Label4" />
